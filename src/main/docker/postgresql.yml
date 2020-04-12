@@ -1,0 +1,11 @@
+version: '2'
+services:
+  cro-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/cro/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=cro
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
